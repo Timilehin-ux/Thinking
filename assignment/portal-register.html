@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="portal-register.css">
+</head>
+<body>
+    <div id="navbar"></div>
+        <script>
+        fetch('navbar.html')
+    .then(res => res.text())
+    .then(data => {
+    document.getElementById('navbar').innerHTML = data;
+    });
+</script>
+<div class="body">
+    <h2>
+    Register
+</h2>
+<p>
+    Fill in the following
+</p>
+<div>
+    <form action="home.php" class="form" method="post">
+    <fieldset class="fieldset">
+        <input type="text" name="f_name" placeholder="Enter your First Name" id="f_name" required>
+        <input type="text" name="l_name" placeholder="Enter your Last Name" id="l_name" required>
+        <input type="email" name="email" placeholder="Enter your Email" id="e_mail" required>
+        <input type="password" placeholder="Enter your Password" name="p_word" id="p_word" required>
+        <input type="file" name="file" id="file" placeholder="place your passport">
+        <button type="submit" name="register">Register</button>
+    </fieldset>
+</form>
+<div class="create">
+    <p>
+        Already have an account? <a href="portal-login.html">Login!</a> 
+    </p>
+</div>
+
+</div>
+</div>
+
+
+</body>
+</html>

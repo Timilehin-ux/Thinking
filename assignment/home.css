@@ -1,0 +1,24 @@
+.main{
+    box-sizing: content-box;
+    height: 500px;
+    margin: 150px 20px 0 100px;
+    text-align: center;
+    color: burlywood;
+    font-size: larger;
+    text-indent: 5px;
+    text-shadow: 3px;
+}
+
+.main img{
+    height: 250px;
+    width: 400px;
+    border-radius: 8px;
+    margin-left: 10px;
+    transition: transform 1s ease ;
+    cursor: pointer;
+}
+
+.main img:hover{
+    transform: scale(1.1);
+}
+

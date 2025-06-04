@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<div id="navbar"></div>
+<script>
+fetch('navbar.html')
+    .then(res => res.text())
+    .then(data => {
+    document.getElementById('navbar').innerHTML = data;
+    });
+</script>
+    <main>
+        <div class="main">
+            <h1>
+                Welcome to The University of Engineering
+            </h1>
+            <a href="#"><img src="images/OIP (1).jpeg" alt=""></a>
+            <a href="#"><img src="images/OIP (2).jpeg" alt=""></a>
+            <p>
+                
+We are delighted to welcome you to [University Name], where
+innovation, excellence, and community come together. Whether you're a
+prospective student, current learner, or esteemed visitor, our university
+is committed to providing a transformative educational experience rooted in
+    academic rigor and real-world impact. Explore our vibrant campus, world-class programs, 
+    and a culture that fosters curiosity, creativity, and collaboration.
+Your journey starts here — and the future is yours to shape.
+            </p>
+            <h2 id="ABOUT">ABOUT</h2>
+            <p>At the University of Engineering, we are dedicated to advancing 
+                innovation through world-class engineering education and research.
+                Our mission is to equip future engineers with the technical expertise, 
+                critical thinking, and ethical foundation needed to solve global challenges.
+                With state-of-the-art facilities, industry partnerships,
+                and a commitment to hands-on learning, we empower students to shape the future 
+                of technology and society.
+            </p>
+            <h2 id="CONTACT">CONTACT</h2>
+            <p>You can contact us with the following:</p>
+        </div>
+    </main>
+</body>
+</html>
